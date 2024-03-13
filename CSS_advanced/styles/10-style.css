@@ -49,7 +49,10 @@ a {
 }
 
 .card-category,
-.section-tagline,
-.section-header {
+.section-tagline {
 	color: var(--color-primary);
+}
+
+.section-header {
+    text-align: var(--section-header-align);
 }
