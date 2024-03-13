@@ -1,4 +1,4 @@
-@import-normalize;
+@import url("-normalize");
 
 *, *:before, *:after {
 	box-sizing: border-box;
