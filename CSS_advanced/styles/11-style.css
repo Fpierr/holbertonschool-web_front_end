@@ -49,15 +49,15 @@ a {
 	display: none;
 }
 
-.card-category {
+.card-category,
+.section-tagline {
 	color: var(--color-primary);
 }
 
 .section-tagline {
-	var(--color-primary);
-	var(--font-family-title);
-	var(--section-tagline-transform);
-	var(--font-weight-bold);
+	font-family: var(--font-family-title);
+	text-transform: var(--section-tagline-transform);
+	font-weight: var(--font-weight-bold);
 }
 
 .section-header {
