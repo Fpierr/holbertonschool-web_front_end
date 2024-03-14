@@ -223,10 +223,6 @@ ul.row {
 	color: var(--nav-item-link-hover);
 }
 
-.nav .nav-item .nav-link:hover {
-	color: var(--color-white);
-}
-
 .nav .nav-link::before {
 	content: "";
 	position: absolute;
