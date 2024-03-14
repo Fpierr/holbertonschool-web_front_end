@@ -227,7 +227,7 @@ ul.row {
 	color: var(--color-white);
 }
 
-.nav .nav-item .nav-link::before {
+.nav .nav-link::before {
 	content: "";
 	position: absolute;
 	top: 0;
