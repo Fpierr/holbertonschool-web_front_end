@@ -322,16 +322,18 @@ ul.row {
 .card-work .card-title {
 	text-align: center;
 	margin: 0;
-	opacity: 0.1;
+	opacity: 0;
 	height: 100%;
 	position: relative;
 }
 
-.card-title a, .card-work a {
+.card-work .card-title a {
 	display: block;
 	text-decoration: none;
 	padding-top: 45%;
-}.card-title a::after, .card-work a::after {
+}
+
+.card-work .card-title a::after  {
 	content: "";
 	position: absolute;
 	top: 0;
