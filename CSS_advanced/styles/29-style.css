@@ -90,6 +90,7 @@ body {
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height-base);
+	padding: var(--section-body-padding);
 }
 
 a:link {
