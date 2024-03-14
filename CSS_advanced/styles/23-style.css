@@ -191,17 +191,6 @@ ul.row {
 	padding: var(--footer-padding);
 }
 
-[class^="col-"] {
-	float: left;
-	padding: 0.5rem;
-}
-
-[data-section-theme="dark"] {
-	--text-color: var(--color-white);
-	--section-title-color: var(--color-white);
-	background: var(--color-black);
-}
-
 .footer-address {
 	color: var(--text-color);
 }
@@ -212,4 +201,15 @@ ul.row {
 
 .social-link svg {
 	fill: var(--text-color);
+}
+
+[class^="col-"] {
+	float: left;
+	padding: 0.5rem;
+}
+
+[data-section-theme="dark"] {
+	--text-color: var(--color-white);
+	--section-title-color: var(--color-white);
+	background: var(--color-black);
 }
