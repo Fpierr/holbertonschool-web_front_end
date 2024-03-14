@@ -98,6 +98,12 @@ a:active {
 	text-decoration: var(--button-text-decoration);
 }
 
+.button:hover {
+        color: var(--button-hover-color);
+        text-decoration: var(--button-hover-text-decoration);
+        background: var(--button-hover-background);
+}
+
 .visually-hidden {
 	display: none;
 }
@@ -105,12 +111,6 @@ a:active {
 .card-category,
 .section-tagline {
 	color: var(--color-primary);
-}
-
-.button:hover {
-	color: var(--button-hover-color);
-	text-decoration: var(--button-hover-text-decoration);
-	background: var(--button-hover-background);
 }
 
 .section {
@@ -252,4 +252,5 @@ ul.row {
 	--text-color: var(--color-white);
 	--section-title-color: var(--color-white);
 	background: var(--color-black);
+	--button-color: var(--color-white);
 }
