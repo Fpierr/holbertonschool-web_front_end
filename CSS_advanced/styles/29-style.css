@@ -227,7 +227,7 @@ ul.row {
 	color: var(--color-white);
 }
 
-.nav .nav-item .nav-link:before {
+.nav .nav-item .nav-link::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -237,11 +237,10 @@ ul.row {
 	height: 20%;
 }
 
-.nav .nav-item:hover .nav-link:before {
+.nav .nav-item:hover .nav-link::before {
  	background-color: var(--color-primary);
 	width: 100%;
 }
-
 
 .section-body {
 	padding: var(--section-body-padding);
