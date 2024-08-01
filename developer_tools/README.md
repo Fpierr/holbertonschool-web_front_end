@@ -2,6 +2,8 @@
 
 In this project, you will analyze this website https://dev-tools.hbtn.info/.
 
+![0872ca9b19e11650e355](https://github.com/user-attachments/assets/4ab53073-75d6-436f-9d7b-b1db4501564e)
+
 ## Resources
 Read or watch:
 
