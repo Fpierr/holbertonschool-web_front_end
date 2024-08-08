@@ -3,7 +3,7 @@ $background_color: #6D6D6D;
 
 body {
     color: $text_color;
-    color: $background_color;;
+    background-color: $background_color;;
 }
 
 p {
@@ -11,5 +11,5 @@ p {
 }
 
 h2 {
-    color: $background_color;
+    background-color: $background_color;
 }
