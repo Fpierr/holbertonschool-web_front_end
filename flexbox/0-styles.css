@@ -176,18 +176,29 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   /* Grid
       ============================= */
-  
-  ul.row {
+
+  .row {
     display: flex;
+  }
+
+  ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
+/*
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+*/
   [class*='col-'] {
+    /*float: left; */
     padding: 0.5rem;
   }
   
