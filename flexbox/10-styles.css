@@ -386,18 +386,13 @@
    /* background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
-    background-color: #010101;
-  } */
-
+    background-color: #010101; */
+  }
   .hero-homepage {
     background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
     background-color: #010101;
-  }
-
-  .section-hero .section-body {
-    padding: 10rem 4rem;
   }
 
   .section-hero .section-title {
@@ -411,6 +406,10 @@
     align-items: flex-start;
     justify-content: center;
     min-height: 50vh;
+  }
+
+  .section-hero .section-body {
+    padding: 10rem 4rem;
   }
 
   .section-hero .section-category {
