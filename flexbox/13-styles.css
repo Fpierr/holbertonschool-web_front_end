@@ -633,6 +633,6 @@
       content: ", ";
     }
 
-    .tag-list li::after {
+    .tag-list li:last-child::after {
       content: "";
     }
