@@ -600,7 +600,7 @@
     }
 
     .post-meta-list strong {
-      color: color-primary;
+      color: var(--color-primary);
       font-size: var(--font-size-small);
       text-transform: uppercase;
       display: block;
