@@ -411,9 +411,8 @@
 }
 
 
-/* Section ABOUT US ===================== */
-
-.section-about-us [class^='col-'] {
+/* Section ABOUT US ============================= */
+.section-about-us [class^="col-"] {
   align-self: center;
 }
 
