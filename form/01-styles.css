@@ -651,7 +651,7 @@
     ============================= */
   .post-comments {
     width: 80%;
-    margin: 10rem 0 0;
+    margin: 10rem 0 0 auto;
     padding-left: 7rem;
 }
 
