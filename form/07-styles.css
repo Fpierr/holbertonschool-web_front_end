@@ -858,8 +858,9 @@ textarea:valid:not(:placeholder-shown) {
     position: relative;
     width: 15rem;
     z-index: 1;
-    border-button: .1rem solid var(--color-grey);
+    border-bottom: .1rem solid var(--color-grey);
     padding: 0;
     cursor: text;
     margin: 0 1rem;
+    background-color: var(--font-white);
   }
