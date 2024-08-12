@@ -12,6 +12,8 @@ This project is focused on creating a responsive web design that adapts to diffe
 ## Resources
 Read or watch:
 
+- [Break point responsive for image](https://www.responsivebreakpoints.com/)
+
 - [The building blocks of responsive design - Progressive web apps | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [A pragmatic guide to designing and building responsive web applications | developerlife.com](https://developerlife.com/2019/08/25/guide-to-building-responsive-web-apps/)
 - [Understanding the difference between mobile-first, adaptive and responsive design](https://fredericgonzalo.com/en/understanding-the-difference-between-mobile-first-adaptive-and-responsive-design/)
