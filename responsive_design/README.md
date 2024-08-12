@@ -1,6 +1,6 @@
 # responsive_design
 
-####### By Fanuel PIERRE
+###### By Fanuel PIERRE
 
 ![image](https://github.com/user-attachments/assets/250f28ca-5564-422a-86c2-a425fc57bd41)
 
