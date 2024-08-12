@@ -1,4 +1,4 @@
-# responsive_design
+# Responsive Design
 
 ###### By Fanuel PIERRE
 
