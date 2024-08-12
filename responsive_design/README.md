@@ -2,6 +2,9 @@
 
 ####### By Fanuel PIERRE
 
+![image](https://github.com/user-attachments/assets/250f28ca-5564-422a-86c2-a425fc57bd41)
+
+
 ## Introduction
 This project is focused on creating a responsive web design that adapts to different screen sizes, ensuring an optimal user experience on all devices. By applying mobile-first principles and using media queries.
 
