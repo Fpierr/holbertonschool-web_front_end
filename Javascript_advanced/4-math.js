@@ -9,7 +9,19 @@ function addBy(firstNumber) {
         return (firstNumber + secondNumber)
     }
 }
-addBy100 = addBy(100)
-addBy1000 = addBy(1000)
-divideBy10 = divideBy(10)
-divideBy100 = divideBy(100)
+
+const addBy100 = function(a) {
+    return addBy(100)(a)
+}
+
+const addBy1000 = function(a) {
+    return addBy(1000)(a)
+}
+
+const divideBy10 = function(a) {
+    return divideBy(10)(a)
+}
+
+const divideBy100 = function(a) {
+    return divideBy(100)(a)
+}
