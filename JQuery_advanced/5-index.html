@@ -37,7 +37,8 @@
                                 cursor: 'pointer'
                             }
                         }).onclick(function() {
-                            $(this).parents('tr').remove()
+                            $(this).closest('tr').remove()
+                            //$(this).parent('tr').remove
                         })
                     )
                 )
@@ -75,7 +76,7 @@
                             $('<td/>', { text: lastName }),
                             $('<td/>', { 
                                 text: '(x)',
-                                css: { backgroundColor: 'orange', cursor: 'pointer', hover: 'blue' },
+                                css: { backgroundColor: 'orange', cursor: 'pointer'},
                                 on: {
                                     click: function () {
                                         $(this).parents('tr').remove();
