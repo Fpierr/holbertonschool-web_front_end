@@ -7,7 +7,7 @@
         crossorigin="anonymous"></script>
 
         <meta charset="utf-8" />
-        <title>Task 4</title>
+        <title>Task 5</title>
     </head>
 
     <body>
@@ -75,7 +75,7 @@
                             $('<td/>', { text: lastName }),
                             $('<td/>', { 
                                 text: '(x)',
-                                css: { backgroundColor: 'orange', cursor: 'pointer' },
+                                css: { backgroundColor: 'orange', cursor: 'pointer', hover: 'blue' },
                                 on: {
                                     click: function () {
                                         $(this).parents('tr').remove();
