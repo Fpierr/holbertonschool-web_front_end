@@ -79,8 +79,8 @@
                                 css: { backgroundColor: 'orange', cursor: 'pointer'},
                                 on: {
                                     click: function () {
-                                        $(this).parents('tr').remove()
-                                        //$(this).closest('tr').remove()
+                                        $(this).closest('tr').remove()
+                                        //$(this).parents('tr').remove()
                                     }
                                 }
                              })
