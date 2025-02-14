@@ -60,9 +60,9 @@
                 $('#pagination').empty()
                 var numberOfPages = Math.ceil(numberOfItems / itemsPerPage);
 
-                for (let i = 0; i < numberOfPages; i++) {
+                for (let i = 1; i < numberOfPages; i++) {
                     let offset = i * itemsPerPage;
-                    var pageItems = $('<li>').text(i + 1)
+                    var pageItems = $('<li>').text(i)
                       .css({
                         cursor: 'pointer',
                         marginLeft: '10px',
@@ -72,7 +72,7 @@
                       .click(function() {
                         queryWikipedia($('input:first').val(), offset);
                       })
-                    if (i + 1 === currentOffset) {
+                    if (i === currentOffset) {
                         pageItems.addClass('active');
                     }
                     $('#pagination').append(pageItems);
