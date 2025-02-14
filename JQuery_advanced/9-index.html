@@ -2,10 +2,15 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
-        <title>Task 8</title>
+        <title>Task 9</title>
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
         integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
         crossorigin="anonymous"></script>
+        <style>
+            .loading {
+                opacity: 0.2;
+            }
+        </style>
     </head>
 
     <body>
@@ -32,6 +37,8 @@
             }
 
             function queryWikipedia(search, offset = 0) {
+                displayLoading(true);
+
                 var url = "https://en.wikipedia.org/w/api.php";
 
                 var data = new URLSearchParams({
@@ -46,14 +53,17 @@
                 fetch(`${url}?${data}`) 
                     .then(function(response) {return response.json(); })
                     .then(function(response) {
+                        displayLoading(false);
                         $('ul').empty();
                         response.query.search.forEach(function({ pageid, title, snippet }) {
                             addNewArticle(pageid, title, snippet);
                         });
 
-                        buildPagination(response.query.searchinfo.totalhits, 10, offset)
+                        buildPagination(response.query.searchinfo.totalhits, 10, offset);
                     })
-                    .catch(function(error) { console.log(error); });
+                    .catch(function(error) { console.log(error);
+                        displayLoading(false);
+                     });
             }
 
             function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
@@ -76,6 +86,17 @@
                         pageItems.addClass('active');
                     }
                     $('#pagination').append(pageItems);
+                }
+            }
+
+            function displayLoading(loading) {
+                let ulFirst = $('ul:first');
+                if (loading) {
+                        ulFirst.wrap('<div class="loading"></div>');
+                } else {
+                    if (ulFirst.parent().hasClass('loading')) {
+                        ulFirst.unwrap();
+                    }
                 }
             }
 
