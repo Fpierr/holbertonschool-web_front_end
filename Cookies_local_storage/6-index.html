@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+
+<body onload="init()">
+    <script type="application/javascript">
+        const availableItems = ['Shampoo', 'Soap', 'Sponge', 'Water'];
+
+        function addItemToCart(item) {
+            let quantity = sessionStorage.getItem(item);
+            quantity = quantity ? parseInt(quantity) + 1 : 1;
+            sessionStorage.setItem(item, quantity);
+        }
+
+        function createStore() {
+            const h2 = document.createElement('h2');
+            h2.innerText = 'Available products:';
+            document.body.appendChild(h2);
+
+            const list = document.createElement('ul');
+            availableItems.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.innerText = item;
+                listItem.onclick = () => addItemToCart(item);
+                list.appendChild(listItem);
+            });
+
+            document.body.appendChild(list);
+        }
+
+        function displayCart() {
+            const itemCount = Object.keys(sessionStorage).reduce((sum, key) => sum + parseInt(sessionStorage.getItem(key) || 0), 0);
+
+            if (itemCount > 0) {
+                const paragraph = document.createElement('p');
+                paragraph.innerText = `You previously had ${itemCount} items in your cart`;
+                document.body.appendChild(paragraph);
+            }
+        }
+
+        function init() {
+            if (typeof sessionStorage === 'undefined') {
+                alert('Sorry, your browser does not support Web storage. Try again with a better one');
+            } else {
+                createStore();
+                displayCart();
+            }
+        }
+    </script>
+</body>
+
+</html>
