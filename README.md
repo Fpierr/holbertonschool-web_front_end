@@ -27,10 +27,10 @@ It covers HTML, CSS, Sass/SCSS, Bootstrap, JavaScript, jQuery, Flexbox, responsi
 ---
 
 ###### Clone the repository:
-```git clone https://github.com/Fpierr/holbertonschool-web_front_end.git
-```
-```cd holbertonschool-web_front_end
-```
+
+```git clone https://github.com/Fpierr/holbertonschool-web_front_end.git```
+
+```cd holbertonschool-web_front_end```
 
 ## Author
 - [Fanuel PIERRE](https://github.com/fpierr)
